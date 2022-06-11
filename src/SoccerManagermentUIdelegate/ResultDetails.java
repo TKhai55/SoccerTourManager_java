@@ -774,12 +774,12 @@ public class ResultDetails extends javax.swing.JFrame {
                 row[1]=name;
 
                 if(s.getType().equals("Score")){
-                    row[2]="imagestore\\score.png";
+                    row[2]="imagestore/score.png";
                 }
                 else if(s.getType().equals("Yellow card"))
-                    row[2]="imagestore\\yellow-card.png";
+                    row[2]="imagestore/yellow-card.png";
                 else
-                    row[2]="imagestore\\red.png";
+                    row[2]="imagestore/red.png";
                 row[3]="";
                 row[4]="";
                 tblmodel.addRow(row);
@@ -791,12 +791,12 @@ public class ResultDetails extends javax.swing.JFrame {
                 row[3]=name;
 
                 if(s.getType().equals("Score")){
-                    row[2]="imagestore\\score.png";
+                    row[2]="imagestore/score.png";
                 }
                 else if(s.getType().equals("Yellow card"))
-                    row[2]="imagestore\\yellow-card.png";
+                    row[2]="imagestore/yellow-card.png";
                 else
-                    row[2]="imagestore\\red.png";
+                    row[2]="imagestore/red.png";
                 row[1]="";
                 row[0]="";
                 tblmodel.addRow(row);

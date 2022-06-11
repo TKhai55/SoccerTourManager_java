@@ -23,8 +23,8 @@ public class TableRenderer extends DefaultTableCellRenderer{
         
          String LogoName= value.toString();
          ImageIcon image;
-         if(LogoName.equals("imagestore\\score.png")||
-                 LogoName.equals("imagestore\\yellow-card.png")||LogoName.equals("imagestore\\red.png")){
+         if(LogoName.equals("imagestore/score.png")||
+                 LogoName.equals("imagestore/yellow-card.png")||LogoName.equals("imagestore/red.png")){
              image= new ImageIcon(new ImageIcon(LogoName).getImage().getScaledInstance(32, 32, Image.SCALE_DEFAULT));
          }
          else{

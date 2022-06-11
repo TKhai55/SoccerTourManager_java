@@ -213,7 +213,7 @@ public class PlayerPage extends javax.swing.JFrame {
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
-    String path ="imagestore\\player.png";
+    String path ="imagestore/player.png";
     private void btnInsertImageActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInsertImageActionPerformed
         // TODO add your handling code here:
             JFileChooser fileChooser = new JFileChooser("imagestore");
@@ -237,7 +237,7 @@ public class PlayerPage extends javax.swing.JFrame {
                 PLSelected=pl.getIDpl();
                 txtFullName.setText(pl.getPlname());
                 if(pl.getPic()==null){
-                    ImageIcon imgThisImg = new ImageIcon(new ImageIcon("imagestore\\player.png").getImage()
+                    ImageIcon imgThisImg = new ImageIcon(new ImageIcon("imagestore/player.png").getImage()
                 .       getScaledInstance(128, 128, Image.SCALE_SMOOTH));
                     lblImage.setIcon(imgThisImg);
                 }
@@ -367,7 +367,7 @@ public class PlayerPage extends javax.swing.JFrame {
         txtFullName.setText("");
         txtNumber.setText("");
         DateBorn.setDate(null);
-        ImageIcon imgThisImg = new ImageIcon(new ImageIcon("imagestore\\player.png").getImage()
+        ImageIcon imgThisImg = new ImageIcon(new ImageIcon("imagestore/player.png").getImage()
                .getScaledInstance(123, 128, Image.SCALE_SMOOTH));
         lblImage.setIcon(imgThisImg);
     }//GEN-LAST:event_btnClearActionPerformed
@@ -474,7 +474,7 @@ public class PlayerPage extends javax.swing.JFrame {
             Object row[]=new Object[8];
             row[0]="PL"+s.getIDpl();
             if(s.getPic()==null){
-                row[1]="imagestore\\player.png";
+                row[1]="imagestore/player.png";
             }
             else
                 row[1]=s.getPic();

@@ -892,7 +892,7 @@ public class HomePage extends javax.swing.JFrame {
                 clbSelected=clb.getIdclb();
                 txtNameClub.setText(clb.getName());
                 if(clb.getLoGo()==null){
-                    ImageIcon imgThisImg = new ImageIcon(new ImageIcon("imagestore\\football-club.png").getImage()
+                    ImageIcon imgThisImg = new ImageIcon(new ImageIcon("imagestore/football-club.png").getImage()
                 .       getScaledInstance(128, 128, Image.SCALE_SMOOTH));
                     lblLoGoClub.setIcon(imgThisImg);
                 }
@@ -910,7 +910,7 @@ public class HomePage extends javax.swing.JFrame {
                     txtNumPlayer.setEditable(true);
                 }
     }//GEN-LAST:event_tblClubMousePressed
-    String path ="imagestore\\football-club.png";
+    String path ="imagestore/football-club.png";
 
     boolean perday = false;
     private void btnInsertImageActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInsertImageActionPerformed
@@ -1297,7 +1297,7 @@ public class HomePage extends javax.swing.JFrame {
             row[0]="CLB"+s.getIdclb();
             
             if(s.getLoGo()==null){
-                row[1]="imagestore\\football-club.png";
+                row[1]="imagestore/football-club.png";
             }
             else
                 row[1]=s.getLoGo();
@@ -1378,13 +1378,13 @@ public class HomePage extends javax.swing.JFrame {
             row[0]="MAT"+s.getIdmatch();
             
             if(s.getPic1()==null){
-                row[1]="imagestore\\football-club.png";
+                row[1]="imagestore/football-club.png";
             }
             else
                 row[1]=s.getPic1();
             row[2]=s.getTeam1name();
             if(s.getPic2()==null){
-                row[3]="imagestore\\football-club.png";
+                row[3]="imagestore/football-club.png";
             }
             else
                 row[3]=s.getPic2();
@@ -1431,13 +1431,13 @@ public class HomePage extends javax.swing.JFrame {
             row[0]="MAT"+s.getIdmatch();
             
             if(s.getPic1()==null){
-                row[1]="imagestore\\football-club.png";
+                row[1]="imagestore/football-club.png";
             }
             else
                 row[1]=s.getPic1();
             row[2]=s.getTeam1name();
             if(s.getPic2()==null){
-                row[3]="imagestore\\football-club.png";
+                row[3]="imagestore/football-club.png";
             }
             else
                 row[3]=s.getPic2();
@@ -1500,7 +1500,7 @@ public class HomePage extends javax.swing.JFrame {
             row[0]="MAT"+s.getIdmatch();
             
             if(s.getPic1()==null){
-                row[1]="imagestore\\football-club.png";
+                row[1]="imagestore/football-club.png";
             }
             else
                 row[1]=s.getPic1();
@@ -1512,7 +1512,7 @@ public class HomePage extends javax.swing.JFrame {
                 row[3]=String.valueOf(s.getScore1())+" : "+String.valueOf(s.getScore2());
             }
             if(s.getPic2()==null){
-                row[4]="imagestore\\football-club.png";
+                row[4]="imagestore/football-club.png";
             }
             else
                 row[4]=s.getPic2();
@@ -1561,7 +1561,7 @@ public class HomePage extends javax.swing.JFrame {
             row[0]="MAT"+s.getIdmatch();
             
             if(s.getPic1()==null){
-                row[1]="imagestore\\football-club.png";
+                row[1]="imagestore/football-club.png";
             }
             else
                 row[1]=s.getPic1();
@@ -1573,7 +1573,7 @@ public class HomePage extends javax.swing.JFrame {
                 row[3]=String.valueOf(s.getScore1())+" : "+String.valueOf(s.getScore2());
             }
             if(s.getPic2()==null){
-                row[4]="imagestore\\football-club.png";
+                row[4]="imagestore/football-club.png";
             }
             else
                 row[4]=s.getPic2();

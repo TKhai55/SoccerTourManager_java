@@ -384,7 +384,7 @@ public class CreateTour extends javax.swing.JFrame {
         new StartingPage(useraccount).setVisible(true);
     }//GEN-LAST:event_btnBackActionPerformed
 
-    String path ="imagestore\\football-player.png";
+    String path ="imagestore/football-player.png";
     private void btnImageActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnImageActionPerformed
         // TODO add your handling code here:
             JFileChooser fileChooser = new JFileChooser("imagestore");
