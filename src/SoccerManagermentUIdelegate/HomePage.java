@@ -863,7 +863,6 @@ public class HomePage extends javax.swing.JFrame {
                 con.close();
                 JOptionPane.showMessageDialog(null,"Thêm dữ liệu thành công","Thông báo",JOptionPane.INFORMATION_MESSAGE);
                 LoadClub(idtour);
-                btnEdit.setEnabled(false);
                 
             }
             catch(SQLException e){
@@ -905,16 +904,10 @@ public class HomePage extends javax.swing.JFrame {
                 
                 txtNumPlayer.setText(Integer.toString(clb.getNumPlayer()));
                 if(clb.getNumPlayer()!=0){
-                    btnInsertImage.setEnabled(false);
-                    txtNameClub.setEditable(false);
                     txtNumPlayer.setEditable(false);
-                    btnEdit.setEnabled(false);
                 }
                 else{
-                    btnInsertImage.setEnabled(true);
-                    txtNameClub.setEditable(true);
                     txtNumPlayer.setEditable(true);
-                    btnEdit.setEnabled(true);
                 }
     }//GEN-LAST:event_tblClubMousePressed
     String path ="imagestore\\football-club.png";
