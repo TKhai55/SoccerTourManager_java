@@ -1,0 +1,61 @@
+-- MySQL dump 10.13  Distrib 8.0.29, for Win64 (x86_64)
+--
+-- Host: localhost    Database: soccermanager
+-- ------------------------------------------------------
+-- Server version	8.0.29
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `result`
+--
+
+DROP TABLE IF EXISTS `result`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `result` (
+  `IDRESULT` int NOT NULL AUTO_INCREMENT,
+  `IDPL` int DEFAULT NULL,
+  `IDCLB` int DEFAULT NULL,
+  `IDMATCH` int DEFAULT NULL,
+  `TIME_RESULT` tinyint NOT NULL,
+  `TYP` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`IDRESULT`),
+  KEY `IDPL` (`IDPL`),
+  KEY `IDCLB` (`IDCLB`),
+  KEY `IDMATCH` (`IDMATCH`),
+  CONSTRAINT `result_ibfk_1` FOREIGN KEY (`IDPL`) REFERENCES `football_player` (`IDPL`),
+  CONSTRAINT `result_ibfk_2` FOREIGN KEY (`IDCLB`) REFERENCES `club` (`IDCLB`),
+  CONSTRAINT `result_ibfk_3` FOREIGN KEY (`IDMATCH`) REFERENCES `match1` (`IDMATCH`)
+) ENGINE=InnoDB AUTO_INCREMENT=78 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `result`
+--
+
+LOCK TABLES `result` WRITE;
+/*!40000 ALTER TABLE `result` DISABLE KEYS */;
+INSERT INTO `result` VALUES (33,242,338,393,5,'Score'),(34,242,338,393,10,'Yellow card'),(35,250,345,393,15,'Yellow card'),(36,250,345,393,20,'Score'),(37,242,338,393,25,'Score'),(38,262,339,394,10,'Score'),(39,262,339,394,15,'Red card'),(40,298,344,394,20,'Red card'),(41,300,344,394,25,'Score'),(42,300,344,394,29,'Score'),(43,300,344,394,29,'Score'),(44,274,341,396,5,'Score'),(45,282,342,396,13,'Score'),(46,246,338,397,30,'Yellow card'),(47,302,344,397,30,'Yellow card'),(48,305,344,397,30,'Yellow card'),(49,249,338,397,49,'Yellow card'),(50,251,345,398,10,'Score'),(51,292,343,398,20,'Score'),(52,292,343,398,30,'Score'),(53,296,343,398,50,'Yellow card'),(54,253,345,398,61,'Score'),(55,254,345,398,70,'Yellow card'),(56,255,345,398,87,'Score'),(63,258,339,399,10,'Yellow card'),(64,263,339,399,15,'Yellow card'),(65,268,340,400,10,'Score'),(66,268,340,400,30,'Score'),(67,278,341,400,35,'Yellow card'),(68,280,341,400,40,'Score'),(69,273,340,400,50,'Yellow card'),(70,270,340,400,70,'Yellow card'),(71,280,341,400,80,'Score'),(72,280,341,400,85,'Score'),(73,271,340,400,87,'Score'),(74,267,340,400,89,'Score'),(75,322,391,522,6,'Score'),(76,322,391,522,10,'Yellow card'),(77,322,391,522,19,'Red card');
+/*!40000 ALTER TABLE `result` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2022-06-11 10:33:43
