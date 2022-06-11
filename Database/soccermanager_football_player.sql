@@ -16,31 +16,27 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `account`
+-- Table structure for table `football_player`
 --
 
-DROP TABLE IF EXISTS `account`;
+DROP TABLE IF EXISTS `football_player`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `account` (
-  `USERNAME` varchar(50) CHARACTER SET utf8mb3 COLLATE utf8_general_ci NOT NULL,
-  `PASS` varchar(50) CHARACTER SET utf8mb3 COLLATE utf8_general_ci NOT NULL,
-  `EMAIL` varchar(50) CHARACTER SET utf8mb3 COLLATE utf8_general_ci NOT NULL,
-  PRIMARY KEY (`USERNAME`),
-  UNIQUE KEY `USERNAME` (`USERNAME`),
-  UNIQUE KEY `EMAIL` (`EMAIL`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+CREATE TABLE `football_player` (
+  `IDPL` int NOT NULL AUTO_INCREMENT,
+  `IDCLB` int NOT NULL,
+  `PLNAME` varchar(30) DEFAULT NULL,
+  `DAY_BORN` date DEFAULT NULL,
+  `SCORE` smallint DEFAULT '0',
+  `YELLOWCARD` tinyint DEFAULT '0',
+  `REDCARD` tinyint DEFAULT '0',
+  `PIC` longblob,
+  `NUMBER` int DEFAULT NULL,
+  PRIMARY KEY (`IDPL`),
+  KEY `IDCLB` (`IDCLB`),
+  CONSTRAINT `football_player_ibfk_1` FOREIGN KEY (`IDCLB`) REFERENCES `club` (`IDCLB`)
+) ENGINE=InnoDB AUTO_INCREMENT=343 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `account`
---
-
-LOCK TABLES `account` WRITE;
-/*!40000 ALTER TABLE `account` DISABLE KEYS */;
-INSERT INTO `account` VALUES ('kakaisme','amon5555','amonktvgaming@gmail.com'),('thienkhai5555','amon5555','thienkhaiak5555@gmail.com');
-/*!40000 ALTER TABLE `account` ENABLE KEYS */;
-UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -51,4 +47,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-06-11 10:33:44
+-- Dump completed on 2022-06-11 20:27:56

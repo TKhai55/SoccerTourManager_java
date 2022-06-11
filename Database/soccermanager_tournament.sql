@@ -38,16 +38,6 @@ CREATE TABLE `tournament` (
   UNIQUE KEY `TNMNAME` (`TNMNAME`)
 ) ENGINE=InnoDB AUTO_INCREMENT=98 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `tournament`
---
-
-LOCK TABLES `tournament` WRITE;
-/*!40000 ALTER TABLE `tournament` DISABLE KEYS */;
-INSERT INTO `tournament` VALUES (95,'Premier League Demo',8,'FIFA','England','2022-04-10','2022-06-20',_binary 'C:\\Users\\Administrator\\Documents\\NetBeansProjects\\Soccer-Management\\imagestore\\premierleague.png',2,56,'kakaisme'),(96,'Premier League',4,'FIFA','England','2022-06-10','2022-06-24',_binary 'C:\\Users\\Administrator\\Documents\\NetBeansProjects\\Soccer-Management\\imagestore\\premierleague.png',1,6,'thienkhai5555'),(97,'LaLiga',4,'FIFA','Spain','2022-06-11','2022-06-30',_binary 'C:\\Users\\Administrator\\Documents\\NetBeansProjects\\Soccer-Management\\imagestore\\laliga.png',1,6,'kakaisme');
-/*!40000 ALTER TABLE `tournament` ENABLE KEYS */;
-UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -58,4 +48,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-06-11 10:33:44
+-- Dump completed on 2022-06-11 20:27:56
